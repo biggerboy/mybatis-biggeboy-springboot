@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.mybatis.parent
+Build-Jdk-Spec: 1.8
+Bundle-Description: The MyBatis parent POM.
+Bundle-DocURL: http://www.example.com
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: mybatis-biggerboy-springboot-autoconfiguration
+Bundle-SymbolicName: com.biggerboy.mybatis.mybatis-biggerboy-springboot-
+ autoconfiguration
+Bundle-Vendor: MyBatis.org
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: com.biggerboy.mybatis;version="1.0.0.SNAPSHOT"
+Implementation-Title: mybatis-biggerboy-springboot-autoconfiguration
+Implementation-Vendor: MyBatis.org
+Implementation-Version: 1.0-SNAPSHOT
+Import-Package: javax.sql,org.apache.ibatis.annotations,org.apache.ibati
+ s.session,org.mybatis.spring,org.mybatis.spring.mapper,org.slf4j,org.sp
+ ringframework.beans,org.springframework.beans.factory,org.springframewo
+ rk.beans.factory.config,org.springframework.beans.factory.support,org.s
+ pringframework.boot.autoconfigure,org.springframework.boot.autoconfigur
+ e.condition,org.springframework.context,org.springframework.context.ann
+ otation,org.springframework.core.env,org.springframework.core.type,org.
+ springframework.util
+Include-Resource: {META-INF/spring.factories=src/main/resources/META-INF
+ /spring.factories}
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: mybatis-biggerboy-springboot-autoconfiguration
+Specification-Vendor: MyBatis.org
+Specification-Version: 1.0
+Tool: Bnd-6.1.0.202111221555
+X-Compile-Source-JDK: 1.8
+X-Compile-Target-JDK: 1.8

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-parent</artifactId>
+        <version>34</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.biggerboy.mybatis</groupId>
+    <artifactId>mybatis-biggerboy-springboot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>mybatis-biggerboy-springboot-autoconfiguration</module>
+        <module>mybatis-biggerboy-starter-test</module>
+        <module>mybatis-biggerboy-springboot-starter</module>
+    </modules>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/src/site</directory>
+                <targetPath>${project.build.directory}/site-src</targetPath>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <configuration>
+                        <locales>en,zh_CN</locales>
+                        <!-- Build using files that replace a placeholder using project properties -->
+                        <siteDirectory>${project.build.directory}/site-src</siteDirectory>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <!-- Add setting 'file.encoding' for Windows environment -->
+                        <argLine>${argLine} -Djdk.attach.allowAttachSelf -Dfile.encoding=UTF-8</argLine>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

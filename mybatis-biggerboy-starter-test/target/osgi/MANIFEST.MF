@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.mybatis.parent
+Build-Jdk-Spec: 1.8
+Bundle-Description: The MyBatis parent POM.
+Bundle-DocURL: http://www.example.com
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: mybatis-biggerboy-starter-test
+Bundle-SymbolicName: org.example.mybatis-biggerboy-starter-test
+Bundle-Vendor: MyBatis.org
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Implementation-Title: mybatis-biggerboy-starter-test
+Implementation-Vendor: MyBatis.org
+Implementation-Version: 1.0-SNAPSHOT
+Import-Package: org.apache.ibatis.annotations,org.springframework.boot,o
+ rg.springframework.boot.autoconfigure,org.springframework.context,org.s
+ pringframework.web.bind.annotation
+Include-Resource: {application.properties=src/main/resources/application
+ .properties}
+Private-Package: com.mytest_starter,com.mytest_starter.controller,com.my
+ test_starter.domain,com.mytest_starter.mapper
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: mybatis-biggerboy-starter-test
+Specification-Vendor: MyBatis.org
+Specification-Version: 1.0
+Tool: Bnd-6.1.0.202111221555
+X-Compile-Source-JDK: 1.8
+X-Compile-Target-JDK: 1.8

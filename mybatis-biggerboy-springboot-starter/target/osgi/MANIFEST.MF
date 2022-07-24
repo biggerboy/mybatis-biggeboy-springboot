@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: mybatis-biggerboy-spring-boot-starter
+Build-Jdk-Spec: 1.8
+Bundle-Description: The MyBatis parent POM.
+Bundle-DocURL: http://www.example.com
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: mybatis-bb-springboot-starter
+Bundle-SymbolicName: com.biggerboy.mybatis.mybatis-biggerboy-springboot-
+ starter
+Bundle-Vendor: MyBatis.org
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Implementation-Title: mybatis-bb-springboot-starter
+Implementation-Vendor: MyBatis.org
+Implementation-Version: 1.0-SNAPSHOT
+Specification-Title: mybatis-bb-springboot-starter
+Specification-Vendor: MyBatis.org
+Specification-Version: 1.0
+Tool: Bnd-6.1.0.202111221555
+X-Compile-Source-JDK: 1.8
+X-Compile-Target-JDK: 1.8
