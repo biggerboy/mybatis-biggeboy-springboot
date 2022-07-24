@@ -1,0 +1,2 @@
+# mybatis-biggeboy-springboot
+写一个自己的springboot stater理解springboot的自动配置，从mybatis的stater开始起步
